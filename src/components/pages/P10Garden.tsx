@@ -28,9 +28,17 @@ export default function P10Garden({onNext}:Props){
           <h2 className="td opacity-0" style={{fontSize:"clamp(2rem,5vw,4rem)",color:"#FFF8F8",lineHeight:1.05,textShadow:"0 4px 40px rgba(0,0,0,.4)"}}>
             A Garden<br/>of Feelings
           </h2>
-          <p className="tb opacity-0" style={{fontSize:".9rem",color:"rgba(255,225,236,.85)",lineHeight:1.9,maxWidth:260}}>
-            Every flower carries a word I couldn't say out loud.
-          </p>
+          <p
+  className="tb opacity-0"
+  style={{
+    fontSize: ".9rem",
+    color: "rgba(255,225,236,.85)",
+    lineHeight: 1.9,
+    maxWidth: 260,
+  }}
+>
+  Every flower carries a word I couldn&apos;t say out loud.
+</p>
           <div className="opacity-0">
             <button onClick={onNext} className="btn btn-p">
               <span>Open the garden →</span>
