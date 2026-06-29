@@ -51,8 +51,13 @@ export default function P03Stats({onNext}:Props){
       <div className="relative z-10 flex flex-col items-center justify-center h-full gap-12 px-8">
         <div className="flex flex-col items-center gap-4">
           <p className="s3h tl opacity-0" style={{color:C.r5,letterSpacing:".35em",fontSize:".75rem"}}>SINCE WE MET</p>
-          <div className="s3-div dh w-24" style={{transformOrigin:"center",scaleX:0}}/>
-        </div>
+          <div
+  className="s3-div dh w-24"
+  style={{
+    transformOrigin: "center",
+    transform: "scaleX(0)",
+  }}
+/>
         <div className="flex flex-wrap justify-center gap-5">
           <div className="s3-card opacity-0"><Counter target={612} label="Days" icon="🤍" /></div>
           <div className="s3-card opacity-0"><Counter target={15000} label="Messages" icon="💬" suffix="+" /></div>
