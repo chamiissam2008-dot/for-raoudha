@@ -24,7 +24,7 @@ function Signature() {
     tl.to("path.sk", { strokeDashoffset: 0, duration: .65, stagger: .1, ease: "power2.inOut" })
       .fromTo(".sk-dot", { scale: 0, opacity: 0, transformOrigin: "center" },
                { scale: 1, opacity: 1, duration: .4, stagger: .12, ease: "back.out(2.5)" });
-    return () => tl.kill();
+    return () => { tl.kill(); };
   }, []);
 
   return (
@@ -222,7 +222,7 @@ export default function P15End({ onNext }: Props) {
           </p>
         ))}
 
-        <div className="e15-dv dh w-20 opacity-0 my-2" style={{ transformOrigin: "center", scaleX: 0 }} />
+        <div className="e15-dv dh w-20 opacity-0 my-2" style={{ transformOrigin: "center", transform: "scaleX(0)" }} />
 
         <div className="e15-sig flex flex-col items-center gap-3 opacity-0">
           <p className="tl" style={{ color: C.r4 }}>From</p>
